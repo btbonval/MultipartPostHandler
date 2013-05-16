@@ -2,8 +2,9 @@
 
 ####
 # 05/2013 modified by Bryan Bonvallet <btbonval@gmail.com>
-# * support file-like objects by replacing type() with isinstance()
-#   and duck-typing for read()
+# * support file-like objects by replacing type() with isinstance(),
+#   duck-typing for read(), calculating size with seek()/tell(), and creating
+#   a hashed filename when no filename can be determined.
 # * more consistent behavior when including mixed file attachments and
 #   non-strings by embedding non-strings into a string formatter.
 ##
